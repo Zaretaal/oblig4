@@ -1,0 +1,138 @@
+#header { 
+    display:grid;
+    grid-template-columns: 4fr 4fr 4fr;
+    text-align:center;
+    background-color:gray;
+    padding: 0;
+}
+li a { 
+    display:grid;
+    color:black;
+    font-size: medium;
+}
+
+body nav{
+    display:grid;
+    text-align:center;
+
+}
+input{
+    display:grid;
+    text-align:center;
+}
+nav.search_bar{ 
+    display:grid;
+}
+
+#meny { 
+    list-style: none;
+    padding: 0;
+}
+
+#menu li{
+    display: inline;
+    margin: 0 20px;
+    padding: 0;
+}
+header nav {
+    display: flex;
+    justify-content:space-between;
+    position: relative;
+}
+
+header nav div{
+    display: grid;
+    gap: 1rem;
+}
+ul {
+    list-style-type: none;
+    text-align: center;
+    margin-top: 0px;
+    color: black;
+
+}
+li {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 20px;
+    color:black
+    
+}
+
+ul header{
+    display:inline-block;
+    margin-right: 100px;
+}
+.img{
+    display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+}
+a { 
+    font-family:Arial, Helvetica, sans-serif;
+    color: black;
+    text-decoration: none;
+}
+h4{ 
+    color:black;
+    text-align:center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2{  
+    color: black;
+    text-align:center;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+p { 
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+
+}
+main{ 
+    display:grid;
+
+}
+#grid-container{
+    display:grid;
+    grid-template-areas: "header" "main" "footer";
+}
+.products{ 
+    display:inline-block;
+    text-align: center;
+    
+}
+footer{  
+    margin-top: 280px;
+    grid-area: footer;
+    color: white;
+    background-color:gray;
+}
+
+@media only screen and (min-width:600px) { 
+    nav.search_bar{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        list-style: none;
+        margin: none;
+    }
+    .flex-section{
+        display: flex;
+        flex-direction: row;
+    }
+    .flex-section img{
+        width: 50%;
+    }
+    .flex-section section{
+        width: 50%;
+        align-self: center;
+    }
+    .right img{
+        order:1;
+    }
+}
